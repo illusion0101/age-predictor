@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background: #181818;
+    color: #ffffff;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.box {
+    background: #292929;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 4vh;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background: #3b3b3b;
+    padding: 1vw;
+    border-radius: 2vw;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    color: #ffffff;
+}
+
+.main-heading, .sub-heading, .result {
+    text-align: center;
+}
+
+.main-heading {
+    margin-bottom: 15px;
+}
+
+.sub-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 1vw;
+    width: fit-content;
+    background: #57F287;
+    color: #000000;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+@media(max-width: 920px){
+    .box {
+        width: 70vw;
+    }
+
+    .main-heading {
+        font-size: 0.8em;
+    }
+
+    .sub-heading {
+        font-size: 0.75em;
+    }
+}
